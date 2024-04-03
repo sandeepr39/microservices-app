@@ -36,4 +36,4 @@ public class OrderController {
         log.info("Cannot Place Order Executing Fallback logic");
         return CompletableFuture.supplyAsync(() -> "Oops! Something went wrong, please order after some time!");
     }
-}}
+}

@@ -1,4 +1,4 @@
-package config;
+package com.sndp.apigateway.config;
 
 
 import org.springframework.context.annotation.Bean;

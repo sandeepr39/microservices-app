@@ -22,8 +22,6 @@
         <module>discoveryServer</module>
         <module>api-gateway</module>
         <module>notification-service</module>
-        <!--        <module>discovery-Server</module>-->
-<!--        <module>discoveryServer</module>-->
     </modules>
 
     <properties>
@@ -31,7 +29,7 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring-cloud.version>2023.0.0</spring-cloud.version>
-    </properties >
+    </properties>
 
     <dependencyManagement>
         <dependencies>
@@ -52,18 +50,10 @@
                 <scope>import</scope>
             </dependency>
 
-<!--            &lt;!&ndash; https://mvnrepository.com/artifact/com.github.docker-java/docker-java &ndash;&gt;-->
-<!--            <dependency>-->
-<!--                <groupId>com.github.docker-java</groupId>-->
-<!--                <artifactId>docker-java</artifactId>-->
-<!--                <version>3.3.0</version>-->
-<!--            </dependency>-->
-
-
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-thymeleaf</artifactId>
-<!--                <version>1.5.1.RELEASE</version>-->
+                <!--<version>1.5.1.RELEASE</version>-->
                 <exclusions>
                     <exclusion>
                         <groupId>ch.qos.logback</groupId>
@@ -93,7 +83,6 @@
 
         </plugins>
     </build>
-
 
 
 </project>

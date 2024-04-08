@@ -1,20 +1,17 @@
 package com.sndp.sbm.orderservice.event;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import org.springframework.context.ApplicationEvent;
 
-@Getter
-@Setter
-public class OrderPlacedEvent extends ApplicationEvent {
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+
+public class OrderPlacedEvent  {
     private String orderNumber;
 
-    public OrderPlacedEvent(Object source, String orderNumber) {
-        super(source);
-        this.orderNumber = orderNumber;
-    }
 
-    public OrderPlacedEvent(String orderNumber) {
-        super(orderNumber);
-        this.orderNumber = orderNumber;
-    }
 }

@@ -4,18 +4,16 @@ import com.sndp.sbm.SpringBootMDB.dto.ProductResponse;
 import com.sndp.sbm.SpringBootMDB.dto.ProductRequest;
 import com.sndp.sbm.SpringBootMDB.model.Product;
 import com.sndp.sbm.SpringBootMDB.repository.ProductRepository;
-import lombok.Builder;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.stream.Collectors;
+
 
 @Service
-//@Builder
 @RequiredArgsConstructor
-//@Slf4j
+@Slf4j
 public class ProductService {
 
     private final ProductRepository productRepository;
@@ -28,7 +26,7 @@ public class ProductService {
                 .build();
 
         productRepository.save(product);
-//        log.info("Product {} is saved", product.getId());
+        log.info("Product {} is saved", product.getId());
     }
 
     public List<ProductResponse> getAllProducts() {

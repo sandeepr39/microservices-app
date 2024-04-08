@@ -9,10 +9,7 @@ import java.math.BigDecimal;
 
 @Data // Lombok
 @Builder
-/* Lombok  create builder method,
-so that we can use this without initializing
-in other classes
- */
+/* Lombok  create builder method, so that we can use this without initializing in other classes */
 
 @AllArgsConstructor
 @NoArgsConstructor

@@ -18,9 +18,9 @@ public class InventoryController {
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
-//    public boolean isInStock(@PathVariable("sku-code") String skuCode ){
-        //this end point will check whether the product is inStock or not using skuCode
-        public List<InventoryResponse> isInStock(@RequestParam List<String> skuCode) {
+     //public boolean isInStock(@PathVariable("sku-code") String skuCode ){
+    //this end point will check whether the product is inStock or not using skuCode
+    public List<InventoryResponse> isInStock(@RequestParam List<String> skuCode) {
         return inventoryService.isInStock(skuCode);
 
     }
